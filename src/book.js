@@ -1,11 +1,11 @@
 
-var result =1;
-var counter =0;
-while (counter<=10){
-    result = result * 2;
-    counter+=1;
-}
-console.log(result);
+// var result =1;
+// var counter =0;
+// while (counter<=10){
+//     result = result * 2;
+//     counter+=1;
+// }
+// console.log(result);
 //
 // var result = 1;
 // for(var counter = 0; counter < 10; counter +=1)
@@ -31,20 +31,20 @@ console.log(result);
 //         output += "Buzz";
 //     console.log(output || n);
 // };
-
-var size = 16;
-
-var board = " ";
-
-for (var y = 0; y < size; y++) {
-    for (var x = 0; x < size; x++) {
-        if ((x + y) % 2 == 0)
-            board += " ";
-        else
-            board += "#";
-    }
-    board += "\n";
-};
+//
+// let size = 16;
+//
+// let board = " ";
+//
+// for (let y = 0; y < size; y++) {
+//     for (let x = 0; x < size; x++) {
+//         if ((x + y) % 2 == 0)
+//             board += " ";
+//         else
+//             board += "#";
+//     }
+//     board += "\n";
+// };
 
 //console.log(board);
 
