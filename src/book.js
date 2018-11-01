@@ -1,24 +1,11 @@
-//console.log(Math.max(17, 21, 73)+100);
-//console.log(Math.min(17, 21, 73)+100);
 
-// var number = 0;
-// while (number <=12){
-//     console.log(number);
-//     number +=2;
-// }
-//
-// for (var number = 0;
-//      number<=12;
-//      number+=2)
-//     console.log(number);
-//
-// var result =1;
-// var counter =0;
-// while (counter<=10){
-//     result = result * 2;
-//     counter+=1;
-// }
-// console.log(result);
+var result =1;
+var counter =0;
+while (counter<=10){
+    result = result * 2;
+    counter+=1;
+}
+console.log(result);
 //
 // var result = 1;
 // for(var counter = 0; counter < 10; counter +=1)
@@ -298,19 +285,6 @@ function sum() {
                         for (var set in table){
                         table[set] = result;
                         }
-                            console.log(table);
-                                console.log(" ")
+                         console.log(table);
+                          console.log(" ")
        };
-
-
-
-
-       function multiply(x) {
-    var increment = 1;
-    while (increment <= 10) {
-        var result = x * increment;
-        console.log(x+ "x" +result+ '=' + increment);
-        increment++;
-    }
-}
-//console.log(multiply(1));
