@@ -71,14 +71,8 @@ function password(arg) {
                     console.log("arg "+temp+" found " +iterations+" times \n");
                 }
                 console.log("var c = "+c);
-
-
+                }
             }
-
-
-
-    }
-
 }
 
 password(54);
