@@ -1,0 +1,80 @@
+//
+// let table2 = {
+//     a: 10, b: 20, c: 30, d: 40,
+//     e: 50, f: 60, g: 70, h: 80,
+//     i: 90, k: 100
+//     };
+//
+// function multiplyNumeric() {
+//     var result = 0;
+//     var sumAllValues = 0;
+//     var avg =0;
+//     var count = 0;
+//     var compare = 0;
+//     var max = 0;
+//     var maxPrint = 0;
+//
+//     for (var x in table2){
+//         result = table2[x];
+//         if(result > 10 && result < 50){
+//             table2[x] *= 2;
+//             console.log("\n"+result);
+//         }
+//         if(max < table2[x]){
+//             max = table2[x];
+//             maxPrint = max;
+//         }
+//         count++;
+//         sumAllValues = (avg += table2[x]);
+//         }avg = sumAllValues/count;
+//              console.log("\n"+"Quantity of properties in object = "+ +count+"\n"+"\n"+
+//               "Max value = "+maxPrint+"\n"+"average value = "+avg);
+//              console.log(table2);
+
+
+// } multiplyNumeric(table2);
+
+// "use strict";
+//
+// function fib(arg) {
+//     var result_a = 1, result_b = 1, sum = 0;
+//
+//     for (var i = 0; i <= arg; i++){
+//         sum = result_a + result_b;
+//         result_a = result_b;
+//         result_b = sum;
+//         console.log("sum = "+sum);
+//         console.log("\n");
+//         console.log("result_b = "+result_b);
+//
+//     }
+// }//fib(2);
+
+function password() {
+    var sourceNum = {
+    a: 1, b: 2, c: 3, d: 4,
+    e: 5, f: 6, g: 7, h: 8,
+    i: 9}
+
+    var a = 0, b = 0;
+    var iterations =0;
+    var result = 0;
+    var temp = 0;
+    for (var x in sourceNum) {
+            a = sourceNum[x];
+            console.log("var a = "+ a+"\n");
+            for(var y in sourceNum){
+                var c = a * sourceNum[y];
+                console.log("var c = "+c);
+                 iterations++;
+
+            }
+            console.log("var temp = "+temp+"\n");
+
+                console.log("iterations = "+iterations+"\n");
+
+    }
+
+}
+
+password();

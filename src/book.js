@@ -142,12 +142,12 @@
 function printNumbers() {
     count = 4;
     for (i = 0; i < 400; i++) {
-        console.log(count)
-        count++
+        console.log(count);
+        count++;
     }
-    ;
+    
 
-    return count
+    return count;
 }
 
 // console.log(printNumbers());
@@ -156,11 +156,11 @@ function printNumbers() {
 function printNumbers2() {
     count = 4;
     for (i = 0; i < 3; i++) {
-        console.log(count)
+        console.log(count);
         count = count + 3;
     }
-    ;
-    return count
+    
+    return count;
 }
 
 // console.log(printNumbers2());
@@ -194,7 +194,7 @@ function years2() {
         console.log(startFromYear);
         startFromYear += 1;
     }
-    ;
+    
     return startFromYear;
 }
 
@@ -208,7 +208,7 @@ function negativeNumbers(x) {
         console.log(count);
     }
     return count;
-};
+}
 
 //console.log(negativeNumbers(-23))
 
@@ -220,7 +220,7 @@ function makeTable() {
             var increment = 1;
             while (increment <= 10) {
                 var result = x * increment;
-                console.log(increment + "x" + x + '=' + result);
+                console.log(increment + "x" + x + "=" + result);
                 increment++;
             }
         }
@@ -235,7 +235,7 @@ function multiply(x) {
     var increment = 1;
     while (increment <= 10) {
         var result = x * increment;
-        console.log(increment + "x" + x + '=' + result);
+        console.log(increment + "x" + x + "=" + result);
         increment++;
     }
 }
@@ -246,7 +246,7 @@ function multiply(x) {
 function sum() {
     var x = 0;
     var increment = 1;
-    for (let i = 100; i > 0; i--) {
+    for (var i = 100; i > 0; i--) {
         x = x + increment;
         increment++;
         console.log(x);
@@ -260,7 +260,7 @@ function sum() {
 function sum() {
     var x = 1;
     var increment = 1;
-    for (let i = 10; i > 1; i--) {
+    for (i = 10; i > 1; i--) {
         x = x * increment;
         increment++;
         console.log(x);
@@ -271,46 +271,56 @@ function sum() {
 //console.log(sum());
 
 
-var table = {
-    a: 1, b: 2, c: 3, d: 4,
-    e: 5, f: 6, g: 7, h: 8,
-    i: 9
-};
-for (var x in table) {
-    var result = 0;
-    var count = 1;
-    for (let i = 0; i < 10; i++) {
-        result = count * table[x];
-        // console.log (table[x]+'x'+count+'='+result);
-        count++;
-    }
-    ;
-}
-;
+
+
 
 var fullTable = 1;
-for (let n = 0; n < 10; n++) {
+for (var n = 0; n < 10; n++) {
     var result = 0;
     var count = 1;
     for (var i = 0; i < 10; i++) {
         result = count * fullTable;
-        console.log(fullTable + 'x' + count + '=' + result);
-        count++;
-    };
+        // console.log(fullTable + "x" + count + "=" + result);
+        // count++;
+    }
 
     fullTable++;
-    console.log(" ")
+    console.log(" ");
     for (var set in table) {
         table[set] = result;
     }
-    console.log(table);
-    console.log(" ")
+    // console.log(table);
+    // console.log(" ");
 }
 
 
+var table = {
+    a: 1, b: 2, c: 3, d: 4,
+    e: 5, f: 6, g: 7, h: 8,
+    i: 9}
 
+    for (var value in table) {
+        var result = 0;
+             var count = 1;
+                 for (i = 0; i < 10; i++) {
+                    result = count * table[value];
+                    // console.log (table[value]+'x'+count+'='+result);
+                    // count++;
+                            }
+}
 
+var table2 = {
+    a: 1, b: 2, c: 3, d: 4,
+    e: 5, f: 6, g: 7, h: 8,
+    i: 9}
+     for (var x in table2){
 
+       var a = 0;
+        var b =0
+         for (var l=0; l<10; l++)
+             table2[x] = a + b;
+
+     } console.log(table2);
 
 
 
