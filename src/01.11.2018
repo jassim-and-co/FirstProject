@@ -67,17 +67,18 @@ function password(arg) {
                 var c = a * sourceNum[y];
                 if (c == arg){
                     temp = c;
-                    console.log("Result = "+temp+"\n");
+                    iterations++;
+                    console.log("arg "+temp+" found " +iterations+" times \n");
                 }
                 console.log("var c = "+c);
-                 iterations++;
+
 
             }
 
-                console.log("iterations = "+iterations+"\n");
+
 
     }
 
 }
 
-password(18);
+password(54);
