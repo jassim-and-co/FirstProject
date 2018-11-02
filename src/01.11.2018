@@ -50,7 +50,7 @@
 //     }
 // }//fib(2);
 
-function password() {
+function password(arg) {
     var sourceNum = {
     a: 1, b: 2, c: 3, d: 4,
     e: 5, f: 6, g: 7, h: 8,
@@ -58,18 +58,21 @@ function password() {
 
     var a = 0, b = 0;
     var iterations =0;
-    var result = 0;
+    var result = temp;
     var temp = 0;
     for (var x in sourceNum) {
             a = sourceNum[x];
-            console.log("var a = "+ a+"\n");
+            console.log("The variable a = "+a+" will be multiplied for every property in the object"+"\n");
             for(var y in sourceNum){
                 var c = a * sourceNum[y];
+                if (c == arg){
+                    temp = c;
+                    console.log("Result = "+temp+"\n");
+                }
                 console.log("var c = "+c);
                  iterations++;
 
             }
-            console.log("var temp = "+temp+"\n");
 
                 console.log("iterations = "+iterations+"\n");
 
@@ -77,4 +80,4 @@ function password() {
 
 }
 
-password();
+password(18);
