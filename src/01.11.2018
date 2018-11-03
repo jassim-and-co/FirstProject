@@ -50,7 +50,7 @@
 //     }
 // }//fib(2);
 
-function findCombinationFor(arg1, arg2) {
+function findCombinationFor(arg1, arg2){
     var sourceNum = {
         a: 1, b: 2, c: 3, d: 4,
         e: 5, f: 6, g: 7, h: 8,
