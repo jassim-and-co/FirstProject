@@ -67,9 +67,9 @@ function findCombination(arg1, arg2) {
             for(var z in sourceNum){
                 var c = sourceNum[z];
                 var sum = a + b + c;
-                var mult = a * b *c;
-                if(mult === arg1 || mult === arg2){
-                    print = "                                                  Found combination of number "+mult+":"+" \n "
+                var mult = a * b * c;
+                if(mult === arg1 || mult === arg2 || sum === arg1 || sum === arg2){
+                    print = "                                                  Found combination for number "+arg1+" or "+arg2+":"+" \n "
                     console.log(print);
                     iterations++;
                 }
@@ -83,7 +83,7 @@ function findCombination(arg1, arg2) {
 }
 
 
-findCombination(729,486);
+findCombination(3,77);
 
 
 
