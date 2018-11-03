@@ -82,7 +82,6 @@ function findCombinationFor(arg1, arg2) {
     }
 }
 
-
 findCombinationFor(567, 729);
 
 
