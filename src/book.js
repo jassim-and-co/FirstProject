@@ -139,193 +139,229 @@
 // console.log(power(2, 4));
 
 
-function printNumbers() {
-    count = 4;
-    for (i = 0; i < 400; i++) {
-        console.log(count);
-        count++;
-    }
-    
+// function printNumbers() {
+//     count = 4;
+//     for (i = 0; i < 400; i++) {
+//         console.log(count);
+//         count++;
+//     }
+//
+//
+//     return count;
+// }
+//
+// // console.log(printNumbers());
+//
+//
+// function printNumbers2() {
+//     count = 4;
+//     for (i = 0; i < 3; i++) {
+//         console.log(count);
+//         count = count + 3;
+//     }
+//
+//     return count;
+// }
+//
+// // console.log(printNumbers2());
+//
+//
+// function toless() {
+//     count = 654;
+//     for (i = 654; i > 0; i--) {
+//         console.log(count);
+//         count = count - 1;
+//     }
+//     return count;
+// }
+//
+// // console.log(toless());
+//
+// function years() {
+//     var startFromYear = 1983;
+//     for (i = 0; i < 34; i++) {
+//         console.log(startFromYear);
+//         startFromYear += 1;
+//     }
+//     return startFromYear;
+// }
+//
+// //console.log(years())
+//
+// function years2() {
+//     var startFromYear = 1983;
+//     while (startFromYear < 2018) {
+//         console.log(startFromYear);
+//         startFromYear += 1;
+//     }
+//
+//     return startFromYear;
+// }
+//
+// //console.log(years2());
+//
+//
+// function negativeNumbers(x) {
+//     var count = x;
+//     while (count < 100) {
+//         count += 1;
+//         console.log(count);
+//     }
+//     return count;
+// }
+//
+// //console.log(negativeNumbers(-23))
+//
+//
+// function makeTable() {
+//     var tillTen = 1;
+//     while (tillTen <= 10) {
+//         function multiply(x) {
+//             var increment = 1;
+//             while (increment <= 10) {
+//                 var result = x * increment;
+//                 console.log(increment + "x" + x + "=" + result);
+//                 increment++;
+//             }
+//         }
+//
+//         tillTen++;
+//     }
+// }
+//
+// // console.log(makeTable());
+//
+// function multiply(x) {
+//     var increment = 1;
+//     while (increment <= 10) {
+//         var result = x * increment;
+//         console.log(increment + "x" + x + "=" + result);
+//         increment++;
+//     }
+// }
+//
+// // console.log(multiply(2));
+//
+//
+// function sum() {
+//     var x = 0;
+//     var increment = 1;
+//     for (var i = 100; i > 0; i--) {
+//         x = x + increment;
+//         increment++;
+//         console.log(x);
+//     }
+//     return "";
+// }
+//
+// //console.log(sum());
+//
+//
+// function sum() {
+//     var x = 1;
+//     var increment = 1;
+//     for (i = 10; i > 1; i--) {
+//         x = x * increment;
+//         increment++;
+//         console.log(x);
+//     }
+//     return "";
+// }
+//
+// //console.log(sum());
+//
+//
+//
+//
+//
+// var fullTable = 1;
+// for (var n = 0; n < 10; n++) {
+//     var result = 0;
+//     var count = 1;
+//     for (var i = 0; i < 10; i++) {
+//         result = count * fullTable;
+//         // console.log(fullTable + "x" + count + "=" + result);
+//         // count++;
+//     }
+//
+//     fullTable++;
+//     console.log(" ");
+//     for (var set in table) {
+//         table[set] = result;
+//     }
+//     // console.log(table);
+//     // console.log(" ");
+// }
+//
+//
+// var table = {
+//     a: 1, b: 2, c: 3, d: 4,
+//     e: 5, f: 6, g: 7, h: 8,
+//     i: 9}
+//
+//     for (var value in table) {
+//         var result = 0;
+//              var count = 1;
+//                  for (i = 0; i < 10; i++) {
+//                     result = count * table[value];
+//                     // console.log (table[value]+'x'+count+'='+result);
+//                     // count++;
+//                             }
+// }
+//
+// var table2 = {
+//     a: 1, b: 2, c: 3, d: 4,
+//     e: 5, f: 6, g: 7, h: 8,
+//     i: 9}
+//      for (var x in table2){
+//
+//        var a = 0;
+//         var b =0
+//          for (var l=0; l<10; l++)
+//              table2[x] = a + b;
+//
+//      } console.log(table2);
+//
+//
+//
 
-    return count;
-}
-
-// console.log(printNumbers());
 
 
-function printNumbers2() {
-    count = 4;
-    for (i = 0; i < 3; i++) {
-        console.log(count);
-        count = count + 3;
-    }
-    
-    return count;
-}
+function password(arg1, arg2) {
+    var sourceNum = {
+        a: 1, b: 2, c: 3, d: 4,
+        e: 5, f: 6, g: 7, h: 8,
+        i: 9}
 
-// console.log(printNumbers2());
+    var a = 0, b = 0;
+    var iterations = 1;
+    var result = temp;
+    var temp = 0;
+    var print = '';
+    for (var x in sourceNum) {
+        a = sourceNum[x];
+        for(var y in sourceNum){
+            var b =  sourceNum[y];
+            for(var z in sourceNum){
+                var c = sourceNum[z];
+                var sum = a + b + c;
+                var mult = a * b *c;
+                if(mult === arg1 || mult === arg2){
+                    print = "                                                  Found combination of number "+mult+":"+" \n "
+                     console.log(print);
+                       iterations++;
+                }
+                console.log(a+ " x "+b+" x "+c+" = "+mult);
+                console.log(a+ " + "+b+" + "+c+" = "+sum+"\n");
 
-
-function toless() {
-    count = 654;
-    for (i = 654; i > 0; i--) {
-        console.log(count);
-        count = count - 1;
-    }
-    return count;
-}
-
-// console.log(toless());
-
-function years() {
-    var startFromYear = 1983;
-    for (i = 0; i < 34; i++) {
-        console.log(startFromYear);
-        startFromYear += 1;
-    }
-    return startFromYear;
-}
-
-//console.log(years())
-
-function years2() {
-    var startFromYear = 1983;
-    while (startFromYear < 2018) {
-        console.log(startFromYear);
-        startFromYear += 1;
-    }
-    
-    return startFromYear;
-}
-
-//console.log(years2());
-
-
-function negativeNumbers(x) {
-    var count = x;
-    while (count < 100) {
-        count += 1;
-        console.log(count);
-    }
-    return count;
-}
-
-//console.log(negativeNumbers(-23))
-
-
-function makeTable() {
-    var tillTen = 1;
-    while (tillTen <= 10) {
-        function multiply(x) {
-            var increment = 1;
-            while (increment <= 10) {
-                var result = x * increment;
-                console.log(increment + "x" + x + "=" + result);
-                increment++;
             }
         }
 
-        tillTen++;
     }
 }
 
-// console.log(makeTable());
 
-function multiply(x) {
-    var increment = 1;
-    while (increment <= 10) {
-        var result = x * increment;
-        console.log(increment + "x" + x + "=" + result);
-        increment++;
-    }
-}
-
-// console.log(multiply(2));
-
-
-function sum() {
-    var x = 0;
-    var increment = 1;
-    for (var i = 100; i > 0; i--) {
-        x = x + increment;
-        increment++;
-        console.log(x);
-    }
-    return "";
-}
-
-//console.log(sum());
-
-
-function sum() {
-    var x = 1;
-    var increment = 1;
-    for (i = 10; i > 1; i--) {
-        x = x * increment;
-        increment++;
-        console.log(x);
-    }
-    return "";
-}
-
-//console.log(sum());
-
-
-
-
-
-var fullTable = 1;
-for (var n = 0; n < 10; n++) {
-    var result = 0;
-    var count = 1;
-    for (var i = 0; i < 10; i++) {
-        result = count * fullTable;
-        // console.log(fullTable + "x" + count + "=" + result);
-        // count++;
-    }
-
-    fullTable++;
-    console.log(" ");
-    for (var set in table) {
-        table[set] = result;
-    }
-    // console.log(table);
-    // console.log(" ");
-}
-
-
-var table = {
-    a: 1, b: 2, c: 3, d: 4,
-    e: 5, f: 6, g: 7, h: 8,
-    i: 9}
-
-    for (var value in table) {
-        var result = 0;
-             var count = 1;
-                 for (i = 0; i < 10; i++) {
-                    result = count * table[value];
-                    // console.log (table[value]+'x'+count+'='+result);
-                    // count++;
-                            }
-}
-
-var table2 = {
-    a: 1, b: 2, c: 3, d: 4,
-    e: 5, f: 6, g: 7, h: 8,
-    i: 9}
-     for (var x in table2){
-
-       var a = 0;
-        var b =0
-         for (var l=0; l<10; l++)
-             table2[x] = a + b;
-
-     } console.log(table2);
-
-
-
-
-
+password(729,486);
 
 
 

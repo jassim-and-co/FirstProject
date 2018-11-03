@@ -50,29 +50,41 @@
 //     }
 // }//fib(2);
 
-function password(arg) {
+function findCombination(arg1, arg2) {
     var sourceNum = {
-    a: 1, b: 2, c: 3, d: 4,
-    e: 5, f: 6, g: 7, h: 8,
-    i: 9}
+        a: 1, b: 2, c: 3, d: 4,
+        e: 5, f: 6, g: 7, h: 8,
+        i: 9}
 
     var a = 0, b = 0;
-    var iterations =0;
+    var iterations = 1;
     var result = temp;
     var temp = 0;
+    var print = '';
     for (var x in sourceNum) {
-            a = sourceNum[x];
-            console.log("The variable a = "+a+" will be multiplied for every property in the object"+"\n");
-            for(var y in sourceNum){
-                var c = a * sourceNum[y];
-                if (c == arg){
-                    temp = c;
+        a = sourceNum[x];
+        for(var y in sourceNum){
+            var b =  sourceNum[y];
+            for(var z in sourceNum){
+                var c = sourceNum[z];
+                var sum = a + b + c;
+                var mult = a * b *c;
+                if(mult === arg1 || mult === arg2){
+                    print = "                                                  Found combination of number "+mult+":"+" \n "
+                    console.log(print);
                     iterations++;
-                    console.log("arg "+temp+" found " +iterations+" times \n");
                 }
-                console.log("var c = "+c);
-                }
+                console.log(a+ " x "+b+" x "+c+" = "+mult);
+                console.log(a+ " + "+b+" + "+c+" = "+sum+"\n");
+
             }
+        }
+
+    }
 }
 
-password(54);
+
+findCombination(729,486);
+
+
+
