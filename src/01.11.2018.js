@@ -163,20 +163,19 @@ function fi(arg) {
 let obj = {
   a: 500,
   b: 30,
-  c: 100
+  c: 100,
+    d:700
 };
 function count_max_val() {
-  var qty = 0;
-  let max_value = 0;
+  let max_value ;
   let value = 0;
   for (var temp in obj) {
-    qty++;
     if (value < obj[temp]) {
       value = obj[temp];
       max_value = value;
     }
   }
-  return "qty: " + qty.toString() + "\n\n" + "max_value: " + max_value + "\n\n";
+  return "max_value: " + max_value + "\n\n";
 }
 console.log(count_max_val());
 
@@ -184,26 +183,23 @@ let arr = Object.values(obj);
 let min = Math.min(...arr);
 let max = Math.max(...arr);
 
-console.log("MinValue: " + min + "\n" + "MaxValue: " + max);
+//console.log("MinValue: " + min + "\n" + "MaxValue: " + max);
+
 
 
 
 function count_min_value() {
-     let min_value = 0;
-     for (let input in obj){
-      var tmp = obj[input];
-      if (tmp > obj[input]){
-         tmp = obj[input]
-      }
-     }  min_value = tmp;
+  let min_value = obj.d;
+    var temp = 0;
+      for (let num in obj) {
+        temp = obj[num];
+          if(min_value > obj[num]){
+            min_value = obj[num];
 
-     return min_value;
+          }
+         }return "Return: "+min_value;
 }
-   console.log(count_min_value());
+console.log(count_min_value());
 
 
-
-
-
-
-      //export default count_min_val();
+//export default count_min_val();
