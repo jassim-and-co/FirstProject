@@ -196,7 +196,8 @@ function count_min_value() {
          tmp = obj[input]
       }
      }  min_value = tmp;
-    return min_value;
+
+     return min_value;
 }
    console.log(count_min_value());
 
