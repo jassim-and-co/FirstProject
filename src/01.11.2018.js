@@ -192,9 +192,7 @@ function count_min_value() {
      let min_value = 0;
      for (let input in obj){
       var tmp = obj[input];
-      var rslt = tmp;
-      console.log(rslt);
-      if (rslt > tmp){
+      if (tmp > obj[input]){
          tmp = obj[input]
       }
      }  min_value = tmp;
