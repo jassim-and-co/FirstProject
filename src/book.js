@@ -11,7 +11,6 @@
 //     result*=2;
 // console.log(result);
 
-
 // var counter = 1;
 // var print = "#";
 // while (counter < 8){
@@ -19,7 +18,6 @@
 //     print +="#";
 //     counter = counter+=1;
 // };
-
 
 // for (var n = 1; n <= 100; n++) {
 //     var output = "";
@@ -137,7 +135,6 @@
 //     return result;
 // }
 // console.log(power(2, 4));
-
 
 // function printNumbers() {
 //     count = 4;
@@ -257,18 +254,20 @@
 // //console.log(sum());
 //
 //
-// function sum() {
-//     var x = 1;
-//     var increment = 1;
-//     for (i = 10; i > 1; i--) {
-//         x = x * increment;
-//         increment++;
-//         console.log(x);
-//     }
-//     return "";
-// }
-//
-// //console.log(sum());
+function sum() {
+    var x = 1;
+    var increment = 1;
+    for (i = 10; i > 1; i--) {
+        x = x * increment;
+        increment++;
+        console.log(x);
+    }
+    return "";
+}
+sum();
+
+// export default sum;
+// console.log(sum());
 //
 //
 //
@@ -325,43 +324,42 @@
 //
 //
 
-
-
-function password(arg1, arg2) {
-    var sourceNum = {
-        a: 1, b: 2, c: 3, d: 4,
-        e: 5, f: 6, g: 7, h: 8,
-        i: 9}
-
-    var a = 0, b = 0;
-    var iterations = 1;
-    var result = temp;
-    var temp = 0;
-    var print = '';
-    for (var x in sourceNum) {
-        a = sourceNum[x];
-        for(var y in sourceNum){
-            var b =  sourceNum[y];
-            for(var z in sourceNum){
-                var c = sourceNum[z];
-                var sum = a + b + c;
-                var mult = a * b *c;
-                if(mult === arg1 || mult === arg2){
-                    print = "                                                  Found combination of number "+mult+":"+" \n "
-                     console.log(print);
-                       iterations++;
-                }
-                console.log(a+ " x "+b+" x "+c+" = "+mult);
-                console.log(a+ " + "+b+" + "+c+" = "+sum+"\n");
-
-            }
-        }
-
-    }
-}
-
-
-password(729,486);
-
-
-
+// function password(arg1, arg2) {
+//   var sourceNum = {
+//     a: 1,
+//     b: 2,
+//     c: 3,
+//     d: 4,
+//     e: 5,
+//     f: 6,
+//     g: 7,
+//     h: 8,
+//     i: 9
+//   };
+//
+//   var a = 0,
+//     b = 0;
+//   var iterations = 1;
+//   var result = temp;
+//   var temp = 0;
+//   var print = "";
+//   for (var x in sourceNum) {
+//     a = sourceNum[x];
+//     for (var y in sourceNum) {
+//       var b = sourceNum[y];
+//       for (var z in sourceNum) {
+//         var c = sourceNum[z];
+//         var sum = a + b + c;
+//         var mult = a * b * c;
+//         if (mult === arg1 || mult === arg2) {
+//           print = " Found combination of number " + mult + ":" + " \n ";
+//           console.log(print);
+//           iterations++;
+//         }
+//         console.log(a + " x " + b + " x " + c + " = " + mult);
+//         console.log(a + " + " + b + " + " + c + " = " + sum + "\n");
+//       }
+//     }
+//   }
+// }
+// password(36, 72);

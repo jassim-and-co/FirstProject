@@ -97,8 +97,7 @@ function findCombinationFor(arg1, arg2) {
     }
   }
 }
-
-// findCombinationFor(3 , 15);
+//findCombinationFor();
 
 function exponent(base, exponent) {
   var result = 1;
@@ -108,7 +107,7 @@ function exponent(base, exponent) {
   }
   return result;
 }
-console.log(exponent(2, 3));
+//console.log(exponent(2, 3));
 
 function fibonacci(arg) {
   var result_a = 1,
@@ -119,9 +118,93 @@ function fibonacci(arg) {
     sum = result_a + result_b;
     result_a = result_b;
     result_b = sum;
-    // console.log("sum = "+sum);
-    // console.log("\n");
-    // console.log("result_b = "+result_b);
-    console.log(result_b);
   }
-} //fibonacci(7);
+  return result_b;
+}
+//fibonacci(7);
+
+function sqrt(arg) {
+  let result = 0;
+  let x = 1;
+  let y = 1;
+  while (result < arg) {
+    x++;
+    y++;
+    result = x * y;
+  }
+  return x;
+}
+
+// export default sqrt;
+
+function myMathPow(base, exponent) {
+  let result = 1;
+  for (var i = 0; i < exponent; i++) {
+    result = result * base;
+  }
+  return result;
+}
+
+function fi(arg) {
+  let a = 1;
+  let b = 1;
+  let c = 0;
+  for (let i = 0; i <= arg; i++) {
+    c = a + b;
+    a = b;
+    b = c;
+    console.log(c);
+  }
+  return b;
+}
+//console.log(fi(7) + "\n");
+//console.log(fibonacci(7));
+
+let obj = {
+  a: 500,
+  b: 30,
+  c: 100
+};
+function count_max_val() {
+  var qty = 0;
+  let max_value = 0;
+  let value = 0;
+  for (var temp in obj) {
+    qty++;
+    if (value < obj[temp]) {
+      value = obj[temp];
+      max_value = value;
+    }
+  }
+  return "qty: " + qty.toString() + "\n\n" + "max_value: " + max_value + "\n\n";
+}
+console.log(count_max_val());
+
+let arr = Object.values(obj);
+let min = Math.min(...arr);
+let max = Math.max(...arr);
+
+console.log("MinValue: " + min + "\n" + "MaxValue: " + max);
+
+
+
+function count_min_value() {
+     let min_value = 0;
+     for (let input in obj){
+      var tmp = obj[input];
+      var rslt = tmp;
+      console.log(rslt);
+      if (rslt > tmp){
+         tmp = obj[input]
+      }
+     }  min_value = tmp;
+    return min_value;
+}
+   console.log(count_min_value());
+
+
+
+
+
+
+      //export default count_min_val();
