@@ -1,7 +1,7 @@
 import $ from "jquery";
 
-import count from "./01.11.2018";
+import benz from "./MercedesBenz";
 
 $(document).ready(function() {
-    $(".container").text(count());
+    $(".container").text();
 });

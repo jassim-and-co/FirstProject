@@ -1,15 +1,3 @@
-// var result =1;
-// var counter =0;
-// while (counter<=10){
-//     result = result * 2;
-//     counter+=1;
-// }
-// console.log(result);
-//
-// var result = 1;
-// for(var counter = 0; counter < 10; counter +=1)
-//     result*=2;
-// console.log(result);
 
 // var counter = 1;
 // var print = "#";
@@ -18,7 +6,7 @@
 //     print +="#";
 //     counter = counter+=1;
 // };
-
+//
 // for (var n = 1; n <= 100; n++) {
 //     var output = "";
 //     if (n % 3 == 0)
@@ -41,14 +29,14 @@
 //     }
 //     board += "\n";
 // };
-
-//console.log(board);
-
+//
+// console.log(board);
+//
 // var result = 7;
 // while (result < 98){
 //     console.log(result+=7);
 // }
-
+//
 // var result = 1;
 // var input = 1
 // var count = 0;
@@ -135,7 +123,7 @@
 //     return result;
 // }
 // console.log(power(2, 4));
-
+//
 // function printNumbers() {
 //     count = 4;
 //     for (i = 0; i < 400; i++) {
@@ -196,170 +184,116 @@
 // }
 //
 // //console.log(years2());
-//
-//
-// function negativeNumbers(x) {
-//     var count = x;
-//     while (count < 100) {
-//         count += 1;
-//         console.log(count);
-//     }
-//     return count;
-// }
-//
-// //console.log(negativeNumbers(-23))
-//
-//
-// function makeTable() {
-//     var tillTen = 1;
-//     while (tillTen <= 10) {
-//         function multiply(x) {
-//             var increment = 1;
-//             while (increment <= 10) {
-//                 var result = x * increment;
-//                 console.log(increment + "x" + x + "=" + result);
-//                 increment++;
-//             }
-//         }
-//
-//         tillTen++;
-//     }
-// }
-//
-// // console.log(makeTable());
-//
-// function multiply(x) {
-//     var increment = 1;
-//     while (increment <= 10) {
-//         var result = x * increment;
-//         console.log(increment + "x" + x + "=" + result);
-//         increment++;
-//     }
-// }
-//
-// // console.log(multiply(2));
-//
-//
-// function sum() {
-//     var x = 0;
-//     var increment = 1;
-//     for (var i = 100; i > 0; i--) {
-//         x = x + increment;
-//         increment++;
-//         console.log(x);
-//     }
-//     return "";
-// }
-//
-// //console.log(sum());
-//
-//
-function sum() {
-    var x = 1;
-    var increment = 1;
-    for (i = 10; i > 1; i--) {
-        x = x * increment;
-        increment++;
-        console.log(x);
+
+function negativeNumbers(x) {
+    var count = x;
+    while (count < 100) {
+        count += 1;
+        console.log(count);
     }
-    return "";
+    return count;
 }
-sum();
 
-// export default sum;
-// console.log(sum());
-//
-//
-//
-//
-//
-// var fullTable = 1;
-// for (var n = 0; n < 10; n++) {
-//     var result = 0;
-//     var count = 1;
-//     for (var i = 0; i < 10; i++) {
-//         result = count * fullTable;
-//         // console.log(fullTable + "x" + count + "=" + result);
-//         // count++;
-//     }
-//
-//     fullTable++;
-//     console.log(" ");
-//     for (var set in table) {
-//         table[set] = result;
-//     }
-//     // console.log(table);
-//     // console.log(" ");
-// }
-//
-//
-// var table = {
-//     a: 1, b: 2, c: 3, d: 4,
-//     e: 5, f: 6, g: 7, h: 8,
-//     i: 9}
-//
-//     for (var value in table) {
-//         var result = 0;
-//              var count = 1;
-//                  for (i = 0; i < 10; i++) {
-//                     result = count * table[value];
-//                     // console.log (table[value]+'x'+count+'='+result);
-//                     // count++;
-//                             }
-// }
-//
-// var table2 = {
-//     a: 1, b: 2, c: 3, d: 4,
-//     e: 5, f: 6, g: 7, h: 8,
-//     i: 9}
-//      for (var x in table2){
-//
-//        var a = 0;
-//         var b =0
-//          for (var l=0; l<10; l++)
-//              table2[x] = a + b;
-//
-//      } console.log(table2);
-//
-//
-//
+//console.log(negativeNumbers(-23))
 
-// function password(arg1, arg2) {
-//   var sourceNum = {
-//     a: 1,
-//     b: 2,
-//     c: 3,
-//     d: 4,
-//     e: 5,
-//     f: 6,
-//     g: 7,
-//     h: 8,
-//     i: 9
-//   };
-//
-//   var a = 0,
-//     b = 0;
-//   var iterations = 1;
-//   var result = temp;
-//   var temp = 0;
-//   var print = "";
-//   for (var x in sourceNum) {
-//     a = sourceNum[x];
-//     for (var y in sourceNum) {
-//       var b = sourceNum[y];
-//       for (var z in sourceNum) {
-//         var c = sourceNum[z];
-//         var sum = a + b + c;
-//         var mult = a * b * c;
-//         if (mult === arg1 || mult === arg2) {
-//           print = " Found combination of number " + mult + ":" + " \n ";
-//           console.log(print);
-//           iterations++;
-//         }
-//         console.log(a + " x " + b + " x " + c + " = " + mult);
-//         console.log(a + " + " + b + " + " + c + " = " + sum + "\n");
-//       }
-//     }
-//   }
-// }
-// password(36, 72);
+
+
+
+var fullTable = 1; //Полная таблица умножения
+for (var n = 0; n < 9; n++) {
+  var result = 0;
+  var count = 1;
+  for (var i = 0; i < 9; i++) {
+    result = count * fullTable;
+    //console.log(fullTable + "x" + count + "=" + result);
+    count++;
+  }
+  fullTable++;
+  //console.log(" ");
+}
+
+var table = { a: 1, b: 2, c: 3, d: 4, e: 5, f: 6, g: 7, h: 8, i: 9 }; //Полная таблица умножения через объект
+for (var z in table) {
+  var result = 0;
+  var count = 1;
+  //console.log(" ");
+  for (i = 0; i < 10; i++) {
+    result = count * table[z];
+    console.log (table[z]+'x'+count+'='+result);
+    count++;
+  }
+}
+
+var table2 = { a: 1, b: 2, c: 3, d: 0.1, e: 5, f: 6, g: 7, h: 8, i: 0.5 }; //
+
+
+var max_table2 = 0; //нахождение максимального числа
+for (var x in table2) {
+  if (max_table2 < table2[x]) {
+    max_table2 = table2[x];
+  }
+} //console.log(max_table2);
+
+var min_table2 = table2["a"]; //нахождение минимального числа
+for (var y in table2) {
+  if (min_table2 > table2[y]) {
+    min_table2 = table2[y];
+  }
+} //console.log(min_table2);
+
+
+function five(some) {
+  let a = 0;
+  let b = 1;
+  let c = 0;
+  some = prompt("Please input number")
+  for (i = 0; i < some; i++ ){
+      c = a + b;
+      a = c;
+      b++; console.log(c)
+  }return c;
+
+}//сложение до 100
+
+function fibonacci(number) {
+    let a = 1;
+    let b = 1;
+    let c = 0;
+    for(i = 0; i < number; i++){
+        c = a + b;
+        a = b;
+        b = c;
+        console.log(b);
+    }return b;
+
+}//console.log(fibonacci(7))
+
+
+const square = (n) =>{
+    return n * n;
+};
+
+const surfaceAreaCalculator = (radius) =>{
+    return 4 * 3.14 * (square(radius));
+};
+
+const surfaceOfMars = surfaceAreaCalculator(3390);
+//console.log(surfaceOfMars)
+
+
+
+function fib(num) {
+    let a = 1; // 1 2 3 5 8 13 21 34 55 89 144
+    let b = 1; // 2 3 5 8 13 21 34 55 89 144 233
+    let c = 0; // 2 3 5 8 13 21 34 55 89 144 233
+    for (i = 0; i < num; i++){
+        c = a + b;
+        a = b;
+        b = c;
+
+        console.log(b);
+    } return b;
+
+}//console.log(fib(11));
+
+
