@@ -4,9 +4,9 @@ function fibonacci(arg) {
         sum = 0;
 
     for (var i = 0; i <= arg; i++) {
-        sum = result_a + result_b;
-        result_a = result_b;
-        result_b = sum;
+         sum = result_a + result_b;
+         result_a = result_b;
+         result_b = sum;
     }
     return result_b;
 }
