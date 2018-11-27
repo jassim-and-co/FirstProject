@@ -79,10 +79,14 @@ function fibonacci(arg) {
     sum = result_a + result_b;
     result_a = result_b;
     result_b = sum;
+      console.log("Line.№ 82 \n :"+ result_b +"\n"+
+          "---------------------------------------------")
   }
+
   return result_b;
 }
-fibonacci(9);
+console.log("Line.№ 73 \n :"+ fibonacci(5) +"\n"+
+"---------------------------------------------")
 
 function sqrt(arg) {
   let result = 0;
