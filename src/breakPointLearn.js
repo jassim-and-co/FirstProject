@@ -1,3 +1,5 @@
+/*
+
 var bill1 = 124, bill2 = 48, bill3  = 268;
 
     var tip = [];
@@ -42,4 +44,12 @@ var finalValues = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
 console.log(tips, finalValues);
 
+*/
 
+function pow(x, n){
+    if (n!==1){
+        return x * pow(x, n-1);
+    }else return x;
+}
+console.log("Line.№ 49 \n :"+ pow(2, 4) +"\n"+
+"------------------------------------------")

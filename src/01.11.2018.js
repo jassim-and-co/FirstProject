@@ -79,14 +79,12 @@ function fibonacci(arg) {
     sum = result_a + result_b;
     result_a = result_b;
     result_b = sum;
-      console.log("Line.№ 82 \n :"+ result_b +"\n"+
-          "---------------------------------------------")
+
   }
 
   return result_b;
 }
-console.log("Line.№ 73 \n :"+ fibonacci(5) +"\n"+
-"---------------------------------------------")
+
 
 function sqrt(arg) {
   let result = 0;
@@ -174,14 +172,7 @@ function showProps(obj, objName) {
 //console.log( showProps(obj, "Values"));
 
 
-function exponent(base, n) {
-    if (n != 1) {
-        return base * exponent(base, n - 1);
-    } else
-    return base;
-}
-console.log("№ 173 : \n"+ exponent(2,3) +"\n"+
-"---------------------------------------------")
+
 
 function fac(n) {
     if(n === 1) {
@@ -252,3 +243,74 @@ var flight = {
 };
 
 
+
+
+
+tipsJohn = [];
+finalPaydsJohn = [];
+
+function tipJohn(bill) {
+    var x = 0;
+    if (bill <= 50){
+        x = bill * 0.2;
+    }else if (bill >= 50 && bill <= 200 ){
+        x = bill * 0.15;
+    }else {
+        x = bill * 0.1;
+    }
+    return x;
+}
+
+function tipMark(bill) {
+    var x = 0;
+    if (bill <= 100){
+        x = bill * 0.2;
+    }else if (bill >= 100 && bill <= 300 ){
+        x = bill * 0.1;
+    }else {
+        x = bill * 0.25;
+    }
+    return x;
+}
+
+
+billsJohn = [124, 48, 268, 180, 342];
+for (var i = 0; i < billsJohn.length; i++){
+    tipsJohn.push (Math.floor((tipJohn(billsJohn[i]))));
+        finalPaydsJohn.push(billsJohn[i] + tipsJohn[i]);
+
+}
+console.log("TipsJohn: "+tipsJohn);
+console.log("FinalPaydsJohn: "+finalPaydsJohn+"\n");
+
+tipsMark = [];
+finalPaydsMark = [];
+
+billsMark = [77, 375, 110, 45];
+
+for (var i = 0; i < billsMark.length; i++){
+    tipsMark.push (Math.floor((tipMark(billsMark[i]))));
+        finalPaydsMark.push(billsMark[i] + tipsMark[i]);
+
+}
+
+console.log("tipsMark: "+tipsMark);
+console.log("finalPaydsMark: "+finalPaydsMark);
+
+function avr(arr) {
+    var sum = 0;
+    for (var i = 0; i < arr.length; i++){
+        sum += arr[i];
+    }return sum = (sum / arr.length);
+}
+
+console.log("Avr John\'s family tips payment: "+avr(tipsJohn));
+console.log("Avr Mark\'s family tips payment: "+avr(tipsMark));
+
+if (avr(tipsJohn) > avr(tipsMark)){
+    console.log("John's family tips pay more then Mark's family");
+}else if (avr(tipsJohn) < avr(tipsMark)) {
+    console.log("John's family tips pay less then Mark's family")
+} else {
+    console.log(" Both families, John's and Mark's pay the same tips");
+}

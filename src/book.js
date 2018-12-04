@@ -219,7 +219,7 @@ for (var z in table) {
   //console.log(" ");
   for (i = 0; i < 10; i++) {
     result = count * table[z];
-    console.log (table[z]+'x'+count+'='+result);
+    //console.log (table[z]+'x'+count+'='+result);
     count++;
   }
 }
@@ -283,17 +283,25 @@ const surfaceOfMars = surfaceAreaCalculator(3390);
 
 
 function fib(num) {
-    let a = 1; // 1 2 3 5 8 13 21 34 55 89 144
-    let b = 1; // 2 3 5 8 13 21 34 55 89 144 233
-    let c = 0; // 2 3 5 8 13 21 34 55 89 144 233
+    let a = 1;
+    let b = 1;
+    let c = 0;
     for (i = 0; i < num; i++){
         c = a + b;
         a = b;
         b = c;
-
-        console.log(b);
+        //console.log(b);
     } return b;
 
 }//console.log(fib(11));
 
+function pow(x, n ) {
+    if( n!==1 ){
+     return x * pow(x, n-1);
+    }else {
+        return x
+    }
+}
 
+console.log("Line.№ 298 \n :"+ pow(2, 3) +"\n"+
+"---------------------------------------------")
